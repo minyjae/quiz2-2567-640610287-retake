@@ -6,7 +6,7 @@ export default function Reply({ userImagePath, username, replyText, likeNum } : 
   return <div>
     <div className="d-flex gap-2 my-2 ps-5">
           <img
-            src="/profileImages/puppy.jpg"
+            src={userImagePath}
             width="48"
             height="48"
             className="rounded-circle"
@@ -17,10 +17,10 @@ export default function Reply({ userImagePath, username, replyText, likeNum } : 
             style={{ backgroundColor: "#3A3B3C" }}
           >
             <span className="fw-semibold" style={{ color: "#E4E6EB" }}>
-              หมาน้อย
+              {username}
             </span>
             <br />
-            <span style={{ color: "#E4E6EB" }}>จริงค้าบบบบบบบบ</span>
+            <span style={{ color: "#E4E6EB" }}>{replyText}</span>
             <div className="d-flex align-items-center gap-1">
               {likeNum > 0 &&<img src="/like.svg" width={20}></img>}
               {likeNum > 0 && <span style={{ color: "#B0B3B8" }}>2 คน</span>}

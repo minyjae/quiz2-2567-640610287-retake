@@ -22,7 +22,7 @@ export default function Home() {
         {/* Reply Example */}
           <Reply userImagePath="/profileImages/puppy.jpg" username="หมาน้อย" replyText="จริงค้าบบบบบบบ" likeNum= {0}/>
           
-          {/* {comments.map((comment) => (
+          {comments.map((comment) => (
           <Comment 
             userImagePath={comment.userImagePath}
             username={comment.username}
@@ -30,7 +30,7 @@ export default function Home() {
             likeNum={comment.likeNum}
             replies={comment.replies}
           />
-        ))} */}
+        ))}
       </div>
     </div>
   );
