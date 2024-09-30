@@ -18,11 +18,11 @@ export default function Home() {
           <PostOwnner name="จิรเดช อรทัย" id= "640610287"/>
 
         {/* Comment Example */}
-          {/* <Comment userImagePath="/profileImages/lisa.jpg" username="Lisa" commentText="จริงค่า" likeNum= {999} replies={comments[0].replies}/> */}
+          <Comment userImagePath="/profileImages/lisa.jpg" username="Lisa" commentText="จริงค่า" likeNum= {999} replies={comments[0].replies}/>
         {/* Reply Example */}
           <Reply userImagePath="/profileImages/puppy.jpg" username="หมาน้อย" replyText="จริงค้าบบบบบบบ" likeNum= {0}/>
           
-          {comments.map((comment) => (
+          {/* {comments.map((comment) => (
           <Comment 
             userImagePath={comment.userImagePath}
             username={comment.username}
@@ -30,7 +30,7 @@ export default function Home() {
             likeNum={comment.likeNum}
             replies={comment.replies}
           />
-        ))}
+        ))} */}
       </div>
     </div>
   );
