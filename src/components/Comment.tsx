@@ -36,7 +36,7 @@ export default function Comment({
             </div>
           </div>
         </div>
-        
+        {replies.map(reply => reply.username)}
       
     </div>
   );
